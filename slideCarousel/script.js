@@ -19,34 +19,21 @@ size = distance;
 newSize();
 imgslide.style.transform = `translateX(-${size}px)`
 function slideRight(){
-    if(index===6) { 
-        index = 1;
-        size = 450;
-        imgslide.style.transition = "none";
-        imgslide.style.transform = `translateX(-${size}px)`;
-        newSize();
-    } else{
     index = index +1;
     newSize();
     imgslide.style.transition = "transform 0.2s ease-in-out";
     imgslide.style.transform = `translateX(-${size}px)`
     console.log(size)
    }
-}
+
 
 function slideLeft(){
-    if(index===0) {
-        index = 6;
-        size = 2407;
-        imgslide.style.transition = "none";
-        imgslide.style.transform = `translateX(-${size}px)`;
-    } else {
     index = index -1;
     newSize();
     imgslide.style.transition = "transform 0.2s ease-in-out";
     imgslide.style.transform = `translateX(-${size}px)`
    }
-}
+
 
 function slideJump(){
     if(img[index].id === "lastClone") {
