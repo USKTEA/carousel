@@ -35,7 +35,7 @@ function goLeft(){
     }
   }
 
-function changeImg(e){
+function changeImg(){
   const number = this.dataset.index;
   for(let i=0;i<img.length-1;i++) {
     img[i].classList.remove("hidden");
